@@ -1,49 +1,160 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en-AU">
+
+<!-- 
+DESIGN GOALS
+- responsive
+- nice typography, but with a monospace font
+- sensible outline - http://gsnedders.html5.org/outliner/
+- compliant HTML5 - https://validator.w3.org
+- marked up with microdata - http://schema.org
+ -->
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Your Website</title>
+	<title>Tully Hansen</title>
 </head>
 
 <body>
 
 	<header>
+		<h1>Tully Hansen</h1>
 		<nav>
+			<h2>Main Menu</h2> <!-- TODO display none -->
 			<ul>
-				<li>Your menu</li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Archives</a></li>
+				<li><a href="#">RSS</a></li>
 			</ul>
 		</nav>
 	</header>
 	
-	<section>
+	<main>
+		<article>
+			<h3><time datetime="2016-10-12T13:55:24+10:00" pubdate="pubdate">2016-10-12, 23:55</time></h3>
+			<p>This site is by Tully Hansen, a bot aficionado from way back (like, since 2014).</p>
+		</article>
+		
+		<hr />
 	
 		<article>
 			<header>
-				<h2>Article title</h2>
-				<p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
+				<h3><time datetime="2016-10-12T13:54:24+10:00" pubdate="pubdate">2016-10-12, 23:54</time></h3>
 			</header>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			<p>Oh, good question! There are a whole bunch of tools and techniques for doing so, running the gamut from beginner-friendly webapps to bespoke codebases.</p>
 		</article>
 		
+		<hr />
+	
 		<article>
 			<header>
-				<h2>Article title</h2>
-				<p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
+				<h3><time datetime="2016-10-12T13:52:24+10:00" pubdate="pubdate">2016-10-12, 23:52</time></h3>
 			</header>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			<p>Another one of the pesky things, this time a bit longer. It’s <a href="#">getting late</a>, I fear...</p>
 		</article>
 		
-	</section>
+		<hr />
+	
+		<article>
+			<header>
+				<h3><time datetime="2016-10-12T13:54:24+10:00" pubdate="pubdate">2016-10-12, 23:54</time></h3>
+				<h2>A Proper Post With A Title And Everything</h2>
+				<nav> <!-- TODO tags only (don't surface category)? -->
+					<a href="#">Category</a>
+					<ul>
+						<li><a href="#">#bots</a></li>
+						<li><a href="#">#web-design</a></li>
+						<li><a href="#">#underscore</a></li>
+					</ul>
+				</nav>
+			</header>
+			<p>National Botmaking Month. It’s like <a href="#">NaNoGenMo</a>, which is itself like <a href="#">NaNoWriMo</a>, inasmuch as all three are creative challenges which take place during the month of November. All three are international, so Na is a bit of a misnomer, but InBoMaMo is even more of a mouthful.</p>
+		</article>
+		
+		<hr />
+	
+		<article>
+			<header>
+				<h3><time datetime="2016-10-12T13:54:24+10:00" pubdate="pubdate">2016-10-12, 23:54</time></h3>
+				<h2>A Post With No Tags</h2>
+				<nav>
+					<a href="#">Bots</a>
+				</nav>
+			</header>
+			<p>National Botmaking Month. It’s like <a href="#">NaNoGenMo</a>, which is itself like <a href="#">NaNoWriMo</a>, inasmuch as all three are creative challenges which take place during the month of November. All three are international, so Na is a bit of a misnomer, but InBoMaMo is even more of a mouthful.</p>
+			<blockquote>A blockquote inside of a post, even if only a little bit.</blockquote>
+			<p>Bots (from ‘robot’) is used here as the term for the (often) small, (sometimes) simple and (occasionally) silly software denizens of platforms like Twitter and Slack. Bots do all manner of things, from telling the time (or not) to toying with the fundamental forces of the universe to generating Disney karaoke. For an idea of the great variety of (Twitter) bots out there, check out @botALLY’s Following list.</p>
+		</article>
+		
+		<hr />
+	
+		<article>
+			<header>
+				<h3><time datetime="2016-10-12T13:54:24+10:00" pubdate="pubdate">2016-10-12, 23:54</time></h3>
+			</header>
+			<p>Oh, good question! There are a whole bunch of tools and techniques for doing so, running the gamut from beginner-friendly webapps to bespoke codebases.</p>
+		</article>
+		
+		<hr />
+	
+		<article>
+			<header>
+				<h3><time datetime="2016-10-12T13:52:24+10:00" pubdate="pubdate">2016-10-12, 23:52</time></h3>
+			</header>
+			<p>Another one of the pesky things, this time a bit longer. It’s <a href="#">getting late</a>, I fear...</p>
+		</article>
+		
+		<hr />
+	
+		<article>
+			<header>
+				<h3><time datetime="2016-10-12T13:52:24+10:00" pubdate="pubdate">2016-10-12, 23:52</time></h3>
+			</header>
+			<p>More statuses. Statii?</p>
+		</article>
+		
+		<hr />
+		
+		<nav>
+		<h3>Pagination</h3> <!-- TODO display none -->
+			<ul>	
+				<li><a href="#">&lt; Older</a></li>
+				<li><a href="#">Newer &gt;</a></li>
+			</ul>			
+		</nav>
+	</main>
 
-	<aside>
-		<h2>About section</h2>
-		<p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	<aside>	
+		<h2>Sidebar</h2> <!-- TODO display none -->
+		<section>
+			<h3>Elseweb</h3>
+			<ul>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Pinboard</a></li>
+				<li><a href="#">GitHub</a></li>
+				<li><a href="#">App.net</a></li>
+			</ul>
+		</section>
+		
+		<section>
+			<h1>Works</h1>
+			<ul>
+				<li><a href="#">NaBoGenMo 2016</a></li>
+				<li><a href="#">@botALLY 2013–present</a></li>
+			</ul>
+		</section>
+		
+		<nav>
+			<h1>Search</h1> <!-- TODO display none -->
+			<form>
+				<input type="search"  placeholder="Search here">
+			</form>
+		</nav>
 	</aside>
 
 	<footer>
-		<p>Copyright 2009 Your name</p>
+		<p>Copyright 2016 Tully Hansen.</p>
 	</footer>
 
 </body>
